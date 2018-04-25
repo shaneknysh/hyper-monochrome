@@ -1,10 +1,10 @@
-const backgroundColor = 'rgba(22, 22, 27, 0.8)';
-const foregroundColor = 'rgba(115,115,115, 0.6)';
+const backgroundColor = '#000';
+const foregroundColor = '#fff';
 const WHITE = '#ffffff';
 const LIGHT_GRAY = 'rgba(242,242,242, 0.7)';
 const DARK_GRAY = 'rgba(104,104,104, 0.6)';
 const cursorColor = LIGHT_GRAY;
-const borderColor = backgroundColor;
+const borderColor = '#999';
 
 const colors = {
   black: DARK_GRAY,
@@ -40,10 +40,10 @@ exports.decorateConfig = (config) => {
               border-color: ${WHITE} !important;
       }
       .hyper_main {
-        border: none !important;
+        border: 1px solid ${borderColor} !important;
       }
       .tab_tab {
-        border: 0;
+        border: 1px solid ${borderColor} !important;
       }
       .tab_textActive {
         border-bottom: 2px solid ${WHITE};
@@ -51,4 +51,3 @@ exports.decorateConfig = (config) => {
     `
   });
 };
-
